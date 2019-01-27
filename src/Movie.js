@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
 import LinesEllipsys from 'react-lines-ellipsis'
+import StarRatings from 'react-star-ratings';
 //To install it run:
 // yarn add react-lines-ellipsis
 
@@ -15,10 +16,11 @@ function Movie({title, poster, genres, rating, synopsis}){
                 <h1>{title}</h1>
                 <div className="Movie__Genres">
                     {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
-                </div>
-                <div className="Movie__Rating">
                     <MovieRating rating={rating} />
                 </div>
+                {/* <div className="Movie__Rating">
+                    <MovieRating rating={rating} />
+                </div> */}
                 <div className="Movie__Synopsys">
                     <LinesEllipsys 
                         text= {synopsis}
@@ -28,6 +30,7 @@ function Movie({title, poster, genres, rating, synopsis}){
                         basedOn='letters'
                     />
                 </div>
+
             </div>
         </div>
     )
