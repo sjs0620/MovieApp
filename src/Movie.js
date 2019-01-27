@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
 import LinesEllipsys from 'react-lines-ellipsis'
-import StarRatings from 'react-star-ratings';
 //To install it run:
 // yarn add react-lines-ellipsis
 
