@@ -17,9 +17,6 @@ function Movie({title, poster, genres, rating, synopsis}){
                     {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
                     <MovieRating rating={rating} />
                 </div>
-                {/* <div className="Movie__Rating">
-                    <MovieRating rating={rating} />
-                </div> */}
                 <div className="Movie__Synopsys">
                     <LinesEllipsys 
                         text= {synopsis}
